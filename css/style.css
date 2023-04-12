@@ -12,7 +12,7 @@ body {
 .header__background--foto {
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
-  background-position-y: 15%;
+  background-position-y: 13%;
   background-position-x: 50%;
   background-size: cover;
   padding: 15px 0 10px 0;
@@ -20,13 +20,17 @@ body {
 }
 
 .header__titulo--fondo-translucido {
-  margin-top: 2rem;
+  margin-top: 3rem;
   background-color: rgba(199, 197, 197, 0.377);
   font-family: "Poppins";
 }
 
+.navbar {
+  padding-top: 3rem;
+}
+
 .navbar-toggler {
-  border: solid 2px white;
+  border: solid 1px;
 }
 
 .nav__bar {
@@ -114,4 +118,34 @@ p {
   .nav__bar {
     font-size: 1.2rem;
   }
+}
+
+/* PAGINA PACIENTES */
+.main__titulo {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.card-group {
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+}
+
+.card-text {
+  padding-bottom: 1rem;
+}
+
+.tarjeta__video {
+  padding-bottom: 2rem;
 }
