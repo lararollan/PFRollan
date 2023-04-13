@@ -114,18 +114,14 @@ p {
   font-size: 1.2rem;
 }
 
-@media (min-width: 768px) {
-  .nav__bar {
-    font-size: 1.2rem;
-  }
-}
-
-/* PAGINA PACIENTES */
+/* /PAGES/ */
 .main__titulo {
+  text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
+/* -PACIENTES- */
 .card-group {
   display: flex;
   justify-content: center;
@@ -148,4 +144,97 @@ p {
 
 .tarjeta__video {
   padding-bottom: 2rem;
+}
+
+/* -TESTIMONIOS- */
+.carousel {
+  width: 100%;
+  height: 350px;
+  margin: 3rem auto 2rem auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-item {
+  height: 350px;
+}
+
+.carousel__img {
+  position: absolute;
+  top: -20%;
+}
+
+.carousel-caption {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  width: 90%;
+  left: 3rem;
+  font-size: large;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.caption--left {
+  width: 50%;
+  left: 0rem;
+}
+
+.testimonios__texto--mobile {
+  width: 90%;
+  margin: 2rem auto 7rem auto;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 2rem;
+}
+.caption p {
+  font-style: italic;
+  border: dashed 1px rgb(147, 3, 3);
+  padding: 1rem;
+}
+/* !!!MEDIA QUERIES!!! */
+
+@media (min-width: 768px) {
+  .nav__bar {
+    font-size: 1.25rem;
+  }
+
+  .carousel {
+    width: 70%;
+    margin-bottom: 8rem;
+    height: 500px;
+  }
+  .carousel-item {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    height: 600px;
+  }
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel {
+    height: 700px;
+  }
+
+  .carousel-item {
+    height: 700px;
+  }
+
+  .carousel__img {
+    top: -35%;
+  }
 }
