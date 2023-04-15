@@ -10,7 +10,7 @@ body {
 }
 
 .header__background--foto {
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.jpeg);
   background-repeat: no-repeat;
   background-position-y: 13%;
   background-position-x: 50%;
@@ -21,7 +21,7 @@ body {
 
 .header__titulo--fondo-translucido {
   margin-top: 3rem;
-  background-color: rgba(199, 197, 197, 0.377);
+  background-color: rgba(199, 197, 197, 0.497);
   font-family: "Poppins";
 }
 
@@ -30,7 +30,8 @@ body {
 }
 
 .navbar-toggler {
-  border: solid 1px;
+  border: solid 2px;
+  background-color: rgba(199, 197, 197, 0.377);
 }
 
 .nav__bar {
@@ -234,7 +235,8 @@ p {
 }
 
 .trayectoria__texto {
-  text-align: justify;
+  text-align: center;
+  padding: 0px 1rem;
 }
 
 .trayectoria__lista {
