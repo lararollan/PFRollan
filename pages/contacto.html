@@ -97,6 +97,83 @@
       </nav>
     </div>
 
+    <!-- ---MAIN--- -->
+    <h2 class="main__titulo">Contactame</h2>
+
+    <div class="container container--marginbottom">
+      <div class="row">
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="col-md-8 col-xl-6">
+          <form class="contacto__formulario">
+            <div class="mb-3">
+              <label for="nombreyapellido" class="form-label"
+                >Nombre y apellido</label
+              >
+              <input type="text" class="form-control" name="nombreyapellido" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" name="telefono" />
+            </div>
+            <div class="mb-3">
+              <label for="consulta" class="form-label">Tipo de consulta</label>
+              <select class="form-select" name="consulta" id="consulta">
+                <option value="paciente">Soy paciente</option>
+                <option value="medico">Soy médico/a</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Escribe tu mensaje</label>
+              <div class="input-group">
+                <textarea class="form-control contacto__mensaje"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Borrar</button>
+          </form>
+        </div>
+
+        <!-- MAPA Y TELEFONO -->
+        <div class="col-md-4 col-xl-6 text-center d-flex flex-column">
+          <div class="ratio ratio-4x3 mt-5 smb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.37995464115!2d-58.41336678477057!3d-34.59455248046185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca867bc7759f%3A0xb11db395b3e6611a!2sHospital%20General%20de%20Ni%C3%B1os%20R.%20Guti%C3%A9rrez!5e0!3m2!1ses-419!2sar!4v1679329896857!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="contacto__info d-flex flex-column justify-content-between"
+          >
+            <i class="fa-solid fa-location-dot direccion__icono contacto"></i>
+
+            <h5>Hospital de Niños Ricardo Gutiérrez</h5>
+
+            <p>Sánchez de Bustamante 1330, CABA.</p>
+            <div class="telefono d-flex">
+              <i class="fa-solid fa-phone telefono__icono"></i>
+              <p class="lead">011-1234-5678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ---FOOTER--- -->
     <div class="container-fluid fixed-bottom footer py-2">
       <footer>

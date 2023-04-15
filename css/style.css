@@ -217,6 +217,70 @@ p {
   border: dashed 1px rgb(147, 3, 3);
   padding: 1rem;
 }
+
+/* TRAYECTORIA */
+.container--marginbottom {
+  margin-bottom: 7rem;
+}
+
+.trayectoria__subtitulo {
+  width: 70%;
+  text-align: center;
+  font-family: "Roboto";
+  border-top: solid 3px #980d0d;
+  border-bottom: solid 3px #980d0d;
+  margin: 1rem auto 3rem auto;
+  padding: 1rem;
+}
+
+.trayectoria__texto {
+  text-align: justify;
+}
+
+.trayectoria__lista {
+  font-family: "Roboto";
+}
+
+.trayectoria__listitem:nth-child(even) {
+  margin-top: 2rem;
+  background-color: #375d9752;
+  border: solid 2px #375d97;
+}
+
+.trayectoria__listitem:nth-child(odd) {
+  background-color: #375d971c;
+  border: solid 2px #375d97;
+  margin-top: 2rem;
+}
+
+/* CONTACTO */
+.contacto__formulario {
+  padding: 1.5rem;
+}
+.contacto__mensaje {
+  height: 300px;
+}
+
+.contacto__info {
+  display: flex;
+}
+
+.direccion__icono.contacto {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.telefono {
+  display: inline-block;
+  justify-content: center;
+}
+.telefono__icono {
+  font-size: 1.6rem;
+  align-self: flex-start;
+  padding-right: 0.8rem;
+  padding-top: 0.3rem;
+}
+
 /* !!!MEDIA QUERIES!!! */
 
 @media (min-width: 768px) {
