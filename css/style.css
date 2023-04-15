@@ -123,13 +123,16 @@ p {
 
 /* -PACIENTES- */
 .card-group {
-  display: flex;
   justify-content: center;
 }
 
 .tarjeta {
   padding: 0 1rem;
   text-align: center;
+}
+
+.card {
+  background-color: rgba(65, 89, 176, 0.096);
 }
 
 .card-title {
@@ -148,7 +151,7 @@ p {
 
 /* -TESTIMONIOS- */
 .carousel {
-  width: 100%;
+  width: 80%;
   height: 350px;
   margin: 3rem auto 2rem auto;
 }
@@ -164,9 +167,18 @@ p {
   height: 350px;
 }
 
-.carousel__img {
+.carousel__img__1 {
   position: absolute;
-  top: -20%;
+  top: -10%;
+}
+.carousel__img__0 {
+  position: absolute;
+  top: -30%;
+}
+
+.carousel__img__2 {
+  position: absolute;
+  top: -10%;
 }
 
 .carousel-caption {
@@ -185,8 +197,14 @@ p {
   left: 0rem;
 }
 
+.caption--right {
+  width: 50%;
+  left: 17rem;
+  text-align: right;
+}
+
 .testimonios__texto--mobile {
-  width: 90%;
+  width: 80%;
   margin: 2rem auto 7rem auto;
 }
 
@@ -207,12 +225,18 @@ p {
   }
 
   .carousel {
-    width: 70%;
+    width: 60%;
     margin-bottom: 8rem;
     height: 500px;
   }
   .carousel-item {
     height: 500px;
+  }
+  .carousel__img__0 {
+    top: -25%;
+  }
+  .carousel__img__1 {
+    top: -25%;
   }
 }
 
@@ -234,7 +258,14 @@ p {
     height: 700px;
   }
 
-  .carousel__img {
-    top: -35%;
+  .carousel__img__0 {
+    top: -30%;
+  }
+  .carousel__img__1 {
+    top: -25%;
+  }
+
+  .carousel__img__2 {
+    top: -15%;
   }
 }
