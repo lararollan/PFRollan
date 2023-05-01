@@ -1,0 +1,224 @@
+/* INICIO */
+
+main {
+  margin-bottom: 5rem;
+}
+p {
+  line-height: 1.7;
+}
+
+// INICIO //
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .bio__subtitulo {
+    font-family: "Roboto";
+    border-top: $title-border;
+    border-bottom: $title-border;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .direccion__icono {
+    @include icono;
+
+    &:hover {
+      transform: translate3d(0, -0.125rem, 0);
+    }
+  }
+}
+
+.gallery {
+  animation: img-appear 3s ease;
+}
+
+@keyframes img-appear {
+  0% {
+    opacity: 0;
+    transform: translatex(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+/* /PAGES/ */
+
+.main__titulo {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* -PACIENTES- */
+.card-group {
+  justify-content: center;
+  animation: card-appear 2s;
+
+  .tarjeta {
+    padding: 0 1rem;
+    text-align: center;
+
+    .card {
+      background-image: $card-gradient;
+      box-shadow: $shadow;
+    }
+
+    .card-title {
+      font-family: "Roboto";
+      margin-bottom: 1rem;
+      margin-top: 0.6rem;
+    }
+
+    .card-text {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .tarjeta__video {
+    padding-bottom: 2rem;
+  }
+}
+
+@keyframes card-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* -TESTIMONIOS- */
+.carousel {
+  width: 80%;
+  height: 350px;
+  margin: 3rem auto 2rem auto;
+
+  .carousel-item {
+    height: 350px;
+
+    .carousel__img__1 {
+      position: absolute;
+      top: -10%;
+    }
+    .carousel__img__0 {
+      position: absolute;
+      top: -30%;
+    }
+
+    .carousel__img__2 {
+      position: absolute;
+      top: -10%;
+    }
+    .caption--right {
+      width: 50%;
+      left: 17rem;
+      text-align: right;
+    }
+    .carousel-caption {
+      font-style: italic;
+      color: rgb(255, 255, 255);
+      width: 90%;
+      left: 3rem;
+      font-size: large;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}
+
+.testimonios__texto--mobile {
+  width: 80%;
+  margin: 2rem auto 7rem auto;
+
+  .caption {
+    text-align: center;
+    margin-top: 2rem;
+
+    & p {
+      font-style: italic;
+      border: dashed 1px rgb(147, 3, 3);
+      padding: 1rem;
+    }
+  }
+}
+
+/* TRAYECTORIA */
+.container--marginbottom {
+  margin-bottom: 7rem;
+
+  .trayectoria__subtitulo {
+    width: 70%;
+    text-align: center;
+    font-family: "Roboto";
+    border-top: $title-border;
+    border-bottom: $title-border;
+    margin: 1rem auto 3rem auto;
+    padding: 1rem;
+  }
+
+  .trayectoria__texto {
+    text-align: center;
+    padding: 0px 1rem;
+  }
+
+  .trayectoria__lista {
+    font-family: "Roboto";
+
+    .trayectoria__listitem:nth-child(odd) {
+      background-image: $card-gradient;
+      box-shadow: $shadow;
+      border: 0;
+    }
+    .trayectoria__listitem:nth-child(even) {
+      @extend .trayectoria__listitem, :nth-child(odd);
+      margin: 2rem 0;
+    }
+  }
+}
+
+/* CONTACTO */
+.contacto__formulario {
+  padding: 1.5rem;
+
+  .contacto__mensaje {
+    height: 300px;
+  }
+}
+
+.contacto__info {
+  display: flex;
+
+  .direccion__icono.contacto {
+    @include icono;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .telefono {
+    display: inline-block;
+    justify-content: center;
+
+    .telefono__icono {
+      font-size: 1.6rem;
+      align-self: flex-start;
+      padding-right: 0.8rem;
+      padding-top: 0.3rem;
+    }
+  }
+}

@@ -36,69 +36,70 @@
 
   <body class="bg-light">
     <!-- ---HEADER--- -->
-    <div class="container-fluid p-x-0 header__background--foto">
-      <div
-        class="container-fluid text-center header__titulo--fondo-translucido"
-      >
-        <h1>Dr. Alejandro Saravia Toledo</h1>
-        <h2>Neurocirujano pediátrico</h2>
-      </div>
-
-      <!-- NAV -->
-      <nav
-        class="navbar navbar-expand-lg bg-body-transparent justify-content-center align-items-center navbar-light-color"
-      >
-        <div class="container nav__bar">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon text-warning-emphasis"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse nav__bar"
-            id="navbarTogglerDemo01"
-          >
-            <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-reset"
-                  aria-current="page"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="pages/trayectoria.html"
-                  >Trayectoria</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="pages/pacientes.html"
-                  >Pacientes</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="pages/testimonios.html"
-                  >Testimonios</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="pages/contacto.html"
-                  >Contactame</a
-                >
-              </li>
-            </ul>
-          </div>
+    <header>
+      <div class="container-fluid p-x-0 header__background--foto header">
+        <div
+          class="container-fluid text-center header__titulo--fondo-translucido"
+        >
+          <h1>Dr. Alejandro Saravia Toledo</h1>
+          <h2>Neurocirujano pediátrico</h2>
         </div>
-      </nav>
-    </div>
 
+        <!-- NAV -->
+        <nav
+          class="navbar navbar-expand-lg bg-body-transparent justify-content-center align-items-center navbar-light-color"
+        >
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon text-warning-emphasis"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav__bar"
+              id="navbarTogglerDemo01"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-reset"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="pages/trayectoria.html"
+                    >Trayectoria</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="pages/pacientes.html"
+                    >Pacientes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="pages/testimonios.html"
+                    >Testimonios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="pages/contacto.html"
+                    >Contactame</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- ---MAIN--- -->
     <main>
       <div class="container mt-5">
@@ -122,7 +123,7 @@
                 Veniam ea error omnis? Odio assumenda deleniti facilis.
               </p>
             </div>
-            <div class="row">
+            <div class="row column-gap-3">
               <!-- DIRECCION DESDE LG -->
               <div class="col-xl-12 d-none d-lg-block text-center direccion">
                 <a
@@ -139,17 +140,17 @@
           </div>
           <!-- GALERÍA -->
           <div
-            class="col-md-4 col-xl-6 text-center ps-md-5 pe-md-0 align-middle"
+            class="gallery col-md-4 col-xl-6 ps-md-0 pe-md-0 d-flex flex-column align-items-center justify-content-center"
           >
             <img
               src="https://picsum.photos/400"
               alt="Cirugia1"
-              class="img-fluid text-center img-thumbnail mb-3"
+              class="gallery__img img-fluid text-center img-thumbnail mb-3"
             />
             <img
               src="https://picsum.photos/400"
               alt="Cirugia1"
-              class="img-fluid text-center img-thumbnail"
+              class="gallery__img img-fluid text-center img-thumbnail"
             />
           </div>
           <!-- DIRECCIÓN SM-->

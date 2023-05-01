@@ -1,0 +1,57 @@
+// TABLET //
+@media (min-width: 768px) {
+  .nav__bar {
+    font-size: 1.25rem;
+  }
+
+  .carousel {
+    width: 60%;
+    margin-bottom: 8rem;
+    height: 500px;
+
+    .carousel-item {
+      height: 500px;
+    }
+    .carousel__img__0 {
+      top: -25%;
+    }
+    .carousel__img__1 {
+      top: -25%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery__img {
+    max-width: 300px;
+    height: auto;
+  }
+  .carousel {
+    height: 600px;
+  }
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+// DESKTOP //
+@media (min-width: 1200px) {
+  .carousel {
+    height: 700px;
+
+    .carousel-item {
+      height: 700px;
+    }
+
+    .carousel__img__0 {
+      top: -30%;
+    }
+    .carousel__img__1 {
+      top: -25%;
+    }
+
+    .carousel__img__2 {
+      top: -15%;
+    }
+  }
+}
