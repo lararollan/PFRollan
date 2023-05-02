@@ -329,6 +329,13 @@ p {
     width: 80%;
     margin: auto;
   }
+  .index__main .bio__list {
+    margin: 2rem;
+  }
+  .index__main .gallery__img {
+    max-width: 400px;
+    height: auto;
+  }
   .carousel {
     height: 700px;
   }

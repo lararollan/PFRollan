@@ -45,6 +45,14 @@
   .index__main {
     width: 80%;
     margin: auto;
+
+    .bio__list {
+      margin: 2rem;
+    }
+    .gallery__img {
+      max-width: 400px;
+      height: auto;
+    }
   }
   .carousel {
     height: 700px;
