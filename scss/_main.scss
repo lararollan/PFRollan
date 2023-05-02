@@ -22,6 +22,15 @@ p {
     padding: 1rem;
   }
 
+  .bio__list {
+    text-align: left;
+    margin-bottom: 2rem;
+
+    li {
+      margin-top: 1rem;
+    }
+  }
+
   .direccion__icono {
     @include icono;
 
@@ -29,6 +38,9 @@ p {
       transform: translate3d(0, -0.125rem, 0);
     }
   }
+}
+.direccion__icono {
+  @include icono;
 }
 
 .gallery {
@@ -78,6 +90,11 @@ p {
     .card-text {
       padding-bottom: 1rem;
     }
+
+    .card__list {
+      list-style-type: none;
+      padding: 0;
+    }
   }
 
   .tarjeta__video {
@@ -122,6 +139,7 @@ p {
       text-align: right;
     }
     .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.442);
       font-style: italic;
       color: rgb(255, 255, 255);
       width: 90%;

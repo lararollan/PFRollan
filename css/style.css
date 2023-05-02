@@ -97,12 +97,24 @@ p {
   margin: 1rem auto;
   padding: 1rem;
 }
+.bio .bio__list {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.bio .bio__list li {
+  margin-top: 1rem;
+}
 .bio .direccion__icono {
   color: #e81313;
   font-size: 2.5rem;
 }
 .bio .direccion__icono:hover, .bio header .navbar .nav__bar .direccion__icono.active, header .navbar .nav__bar .bio .direccion__icono.active {
   transform: translate3d(0, -0.125rem, 0);
+}
+
+.direccion__icono {
+  color: #e81313;
+  font-size: 2.5rem;
 }
 
 .gallery {
@@ -147,6 +159,10 @@ p {
 .card-group .tarjeta .card-text {
   padding-bottom: 1rem;
 }
+.card-group .tarjeta .card__list {
+  list-style-type: none;
+  padding: 0;
+}
 .card-group .tarjeta__video {
   padding-bottom: 2rem;
 }
@@ -186,6 +202,7 @@ p {
   text-align: right;
 }
 .carousel .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.442);
   font-style: italic;
   color: rgb(255, 255, 255);
   width: 90%;
@@ -293,6 +310,9 @@ p {
   }
 }
 @media (min-width: 992px) {
+  .bio__list {
+    margin-left: 2rem;
+  }
   .gallery__img {
     max-width: 300px;
     height: auto;
@@ -305,6 +325,10 @@ p {
   }
 }
 @media (min-width: 1200px) {
+  .index__main {
+    width: 80%;
+    margin: auto;
+  }
   .carousel {
     height: 700px;
   }

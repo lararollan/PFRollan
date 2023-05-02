@@ -22,10 +22,16 @@
 }
 
 @media (min-width: 992px) {
+  //MAIN
+  .bio__list {
+    margin-left: 2rem;
+  }
   .gallery__img {
     max-width: 300px;
     height: auto;
   }
+
+  //TESTIMONIOS
   .carousel {
     height: 600px;
   }
@@ -36,6 +42,10 @@
 
 // DESKTOP //
 @media (min-width: 1200px) {
+  .index__main {
+    width: 80%;
+    margin: auto;
+  }
   .carousel {
     height: 700px;
 
