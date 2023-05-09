@@ -124,7 +124,7 @@ p {
 @keyframes img-appear {
   0% {
     opacity: 0;
-    transform: translatex(80px);
+    transform: translatex(-80px);
   }
   100% {
     opacity: 1;
